@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学びデザイン提案システム</title>
+    <link rel="stylesheet" href="proposal.css">
+</head>
+<body>
+    <div class="container">
+        <!-- ヘッダ -->
+        <header class="header">
+            <h1>学びデザイン提案システム</h1>
+            <p class="subtitle">体験的な学習活動の提案ツール</p>
+            <p class="description">授業の条件を入力すると、最適な学習活動の工夫と評価方法を提案します</p>
+        </header>
+
+        <!-- 入力フォーム -->
+        <section class="input-section">
+            <h2>授業の条件を入力</h2>
+            <form id="proposalForm" class="proposal-form">
+                <!-- Claude API キー -->
+                <div class="form-group">
+                    <label for="apiKey">Claude API キー <span class="required">*</span></label>
+                    <input type="password" id="apiKey" name="apiKey" placeholder="sk-ant-..." required>
+                    <small>API キーは安全に保管され、サーバーに送信されません</small>
+                </div>
+                <!-- 教科 -->
+                <div class="form-group">
+                    <label for="subject">教科 <span class="required">*</span></label>
+                    <select id="subject" name="subject" required>
+                        <option value="">選択してください</option>
+                        <option value="国語">国語</option>
+                        <option value="算数">算数</option>
+                        <option value="数学">数学</option>
+                        <option value="理科">理科</option>
+                        <option value="社会">社会</option>
+                        <option value="歴史">歴史</option>
+                        <option value="地理">地理</option>
+                        <option value="公民">公民</option>
+                        <option value="経済">経済</option>
+                        <option value="言語">言語</option>
+                        <option value="芸術">芸術</option>
+                        <option value="技術">技術</option>
+                        <option value="体育">体育</option>
+                        <option value="家庭科">家庭科</option>
+                        <option value="情報">情報</option>
+                    </select>
+                </div>
+
+                <!-- 学年 -->
+                <div class="form-group">
+                    <label for="grade">学年 <span class="required">*</span></label>
+                    <select id="grade" name="grade" required>
+                        <option value="">選択してください</option>
+                        <option value="小1">小学1年</option>
+                        <option value="小2">小学2年</option>
+                        <option value="小3">小学3年</option>
+                        <option value="小4">小学4年</option>
+                        <option value="小5">小学5年</option>
+                        <option value="小6">小学6年</option>
+                        <option value="中1">中学1年</option>
+                        <option value="中2">中学2年</option>
+                        <option value="中3">中学3年</option>
+                        <option value="高1">高校1年</option>
+                        <option value="高2">高校2年</option>
+                        <option value="高3">高校3年</option>
+                    </select>
+                </div>
+
+                <!-- やりたいこと -->
+                <div class="form-group">
+                    <label for="objective">やりたいこと（学習目標・テーマ） <span class="required">*</span></label>
+                    <textarea id="objective" name="objective" rows="4" placeholder="例：生態系の食物連鎖を体験を通じて理解させたい&#10;例：歴史的出来事を多角的に考えさせたい" required></textarea>
+                </div>
+
+                <!-- 追加情報（オプション） -->
+                <div class="form-group">
+                    <label for="additionalInfo">その他の条件（オプション）</label>
+                    <textarea id="additionalInfo" name="additionalInfo" rows="3" placeholder="例：デジタルツール使用可、グループワーク重視、など"></textarea>
+                </div>
+
+                <!-- ボタン -->
+                <button type="submit" class="submit-button">提案を生成</button>
+            </form>
+        </section>
+
+        <!-- 提案結果 -->
+        <section class="result-section" id="resultSection" style="display: none;">
+            <h2>提案結果</h2>
+            <div class="result-content" id="resultContent"></div>
+            <div class="result-actions">
+                <button class="copy-button" onclick="copyProposal()">コピー</button>
+                <button class="reset-button" onclick="resetForm()">別の条件で提案</button>
+            </div>
+        </section>
+
+        <!-- エラーメッセージ -->
+        <div class="error-message" id="errorMessage" style="display: none;"></div>
+    </div>
+
+    <footer class="footer">
+        <p>学びデザイン提案システム | MVP版プロトタイプ</p>
+        <p><small>体験的な学習活動の工夫と評価方法を提案します</small></p>
+    </footer>
+
+    <script src="proposal.js"></script>
+</body>
+</html>

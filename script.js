@@ -3,9 +3,6 @@ let exploreCases = [];
 let trainingCases = [];
 let currentMode = 'explore';
 
-const GEMINI_MODEL = 'gemini-2.5-flash';
-const GEMINI_ENDPOINT = `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:generateContent`;
-
 const modal = document.getElementById('modal');
 const resultsContainer = document.getElementById('results');
 const resultsTitle = document.getElementById('resultsTitle');
@@ -24,7 +21,6 @@ document.addEventListener('DOMContentLoaded', () => {
     setupModeSwitch();
     setupSearchForms();
     setupModal();
-    setupApiKey();
     document.getElementById('generateBtn').addEventListener('click', generateActivity);
 });
 
@@ -40,44 +36,6 @@ async function loadAllCases() {
     } catch (error) {
         console.error('データの読み込みに失敗しました:', error);
     }
-}
-
-// ── APIキー管理 ──────────────────────────────────────────
-
-function setupApiKey() {
-    const saved = localStorage.getItem('gemini_api_key');
-    if (saved) {
-        showApiKeySet();
-    } else {
-        showApiKeyInput();
-    }
-
-    document.getElementById('saveApiKey').addEventListener('click', () => {
-        const key = document.getElementById('apiKeyInput').value.trim();
-        if (!key) { alert('APIキーを入力してください。'); return; }
-        localStorage.setItem('gemini_api_key', key);
-        showApiKeySet();
-    });
-
-    document.getElementById('clearApiKey').addEventListener('click', () => {
-        localStorage.removeItem('gemini_api_key');
-        document.getElementById('apiKeyInput').value = '';
-        showApiKeyInput();
-    });
-}
-
-function showApiKeyInput() {
-    document.getElementById('apiKeySection').classList.remove('hidden');
-    document.getElementById('apiKeySet').classList.add('hidden');
-}
-
-function showApiKeySet() {
-    document.getElementById('apiKeySection').classList.add('hidden');
-    document.getElementById('apiKeySet').classList.remove('hidden');
-}
-
-function getApiKey() {
-    return localStorage.getItem('gemini_api_key');
 }
 
 // ── モード切替 ───────────────────────────────────────────
@@ -161,12 +119,6 @@ function searchTraining() {
 // ── Gemini API 生成 ──────────────────────────────────────
 
 async function generateActivity() {
-    const apiKey = getApiKey();
-    if (!apiKey) {
-        alert('APIキーを設定してください。');
-        return;
-    }
-
     const theme = document.getElementById('lessonTheme').value.trim();
     if (!theme) {
         alert('授業テーマ・単元を入力してください。');
@@ -224,15 +176,16 @@ async function generateActivity() {
 }`;
 
     try {
-        const res = await fetch(`${GEMINI_ENDPOINT}?key=${apiKey}`, {
+        const res = await fetch('/api/generate', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({
-                contents: [{ parts: [{ text: prompt }] }],
-                generationConfig: { responseMimeType: 'application/json' }
-            })
+            body: JSON.stringify({ prompt })
         });
 
+        if (res.status === 429) {
+            const err = await res.json();
+            throw new Error(err.error);
+        }
         if (!res.ok) {
             const err = await res.json();
             throw new Error(err.error?.message || `HTTP ${res.status}`);

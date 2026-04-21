@@ -1,0 +1,290 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* ヘッダ */
+.header {
+    text-align: center;
+    margin-bottom: 40px;
+    background: white;
+    padding: 40px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+    font-size: 2.5em;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 1.2em;
+    color: #3498db;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.description {
+    font-size: 0.95em;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* 入力セクション */
+.input-section {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+.input-section h2 {
+    color: #2c3e50;
+    margin-bottom: 25px;
+    font-size: 1.5em;
+}
+
+.proposal-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #2c3e50;
+}
+
+.required {
+    color: #e74c3c;
+    margin-left: 4px;
+}
+
+.form-group select,
+.form-group textarea,
+.form-group input[type="password"] {
+    padding: 10px;
+    border: 2px solid #e0e0e0;
+    border-radius: 4px;
+    font-size: 0.95em;
+    font-family: inherit;
+    transition: border-color 0.3s;
+}
+
+.form-group select:focus,
+.form-group textarea:focus,
+.form-group input[type="password"]:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+}
+
+.form-group small {
+    display: block;
+    font-size: 0.85em;
+    color: #999;
+    margin-top: 5px;
+}
+
+/* チェックボックスグループ */
+.checkbox-group {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 12px;
+}
+
+.checkbox-group label {
+    display: flex;
+    align-items: center;
+    font-weight: normal;
+    cursor: pointer;
+    margin-bottom: 0;
+}
+
+.checkbox-group input[type="checkbox"] {
+    margin-right: 8px;
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+}
+
+/* フルワイド要素 */
+.form-group:has(textarea) {
+    grid-column: 1 / -1;
+}
+
+.form-group:has(.checkbox-group) {
+    grid-column: 1 / -1;
+}
+
+/* ボタン */
+.submit-button {
+    grid-column: 1 / -1;
+    padding: 14px 30px;
+    background: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.submit-button:hover {
+    background: #2980b9;
+}
+
+.submit-button:active {
+    transform: scale(0.98);
+}
+
+/* 結果セクション */
+.result-section {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+.result-section h2 {
+    color: #2c3e50;
+    margin-bottom: 25px;
+    font-size: 1.5em;
+}
+
+.result-content {
+    background: #f8f9fa;
+    padding: 25px;
+    border-radius: 6px;
+    border-left: 4px solid #3498db;
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+.result-content h3 {
+    color: #2c3e50;
+    font-size: 1.1em;
+    margin-top: 20px;
+    margin-bottom: 12px;
+}
+
+.result-content h3:first-child {
+    margin-top: 0;
+}
+
+.result-content ul {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.result-content li {
+    margin-bottom: 8px;
+}
+
+.result-content strong {
+    color: #2c3e50;
+}
+
+/* 結果アクション */
+.result-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.copy-button,
+.reset-button {
+    flex: 1;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 0.95em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.copy-button {
+    background: #27ae60;
+    color: white;
+}
+
+.copy-button:hover {
+    background: #229954;
+}
+
+.reset-button {
+    background: #95a5a6;
+    color: white;
+}
+
+.reset-button:hover {
+    background: #7f8c8d;
+}
+
+/* エラーメッセージ */
+.error-message {
+    background: #ffe0e0;
+    border: 2px solid #e74c3c;
+    color: #c0392b;
+    padding: 15px 20px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+/* フッタ */
+.footer {
+    text-align: center;
+    padding: 20px;
+    color: #666;
+    margin-top: 60px;
+}
+
+.footer p {
+    margin: 5px 0;
+}
+
+/* レスポンシブ */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 1.8em;
+    }
+
+    .proposal-form {
+        grid-template-columns: 1fr;
+    }
+
+    .checkbox-group {
+        grid-template-columns: 1fr;
+    }
+
+    .result-actions {
+        flex-direction: column;
+    }
+}

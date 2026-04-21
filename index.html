@@ -84,56 +84,6 @@
             <h2>活動を生成・検索 <span class="mode-label training">習得型</span></h2>
             <p class="form-desc">目標から逆算し、スキルを身につける授業活動を提案します</p>
 
-            <!-- APIキー設定 -->
-            <div class="api-key-section" id="apiKeySection">
-
-                <!-- API取得ガイド -->
-                <details class="api-guide">
-                    <summary class="api-guide-summary">APIキーとは？取得方法・料金について</summary>
-                    <div class="api-guide-body">
-                        <div class="api-guide-grid">
-                            <div class="api-guide-item">
-                                <div class="api-guide-icon">🔑</div>
-                                <h4>APIキーとは</h4>
-                                <p>このツールはGoogleの生成AI「Gemini」を使って授業活動を設計します。APIキーは、あなたのGoogleアカウントとGeminiをつなぐ認証コードです。</p>
-                            </div>
-                            <div class="api-guide-item">
-                                <div class="api-guide-icon">💴</div>
-                                <h4>料金について</h4>
-                                <p>無料枠：1日500回まで無料。有料時でも1回あたり約0.1円。通常の授業準備では無料枠で十分対応できます。</p>
-                            </div>
-                            <div class="api-guide-item">
-                                <div class="api-guide-icon">🔒</div>
-                                <h4>セキュリティ</h4>
-                                <p>入力したAPIキーはあなたのブラウザ内にのみ保存されます。このサイトのサーバーには一切送信されません。</p>
-                            </div>
-                        </div>
-                        <div class="api-guide-steps">
-                            <h4>取得手順（約2分）</h4>
-                            <ol>
-                                <li><a href="https://aistudio.google.com/app/apikey" target="_blank" rel="noopener noreferrer">Google AI Studio</a> を開く（Googleアカウントが必要です）</li>
-                                <li>「APIキーを作成」をクリック</li>
-                                <li>表示されたキー（「AIzaSy...」から始まる文字列）をコピー</li>
-                                <li>下のAPIキー入力欄に貼り付けて「保存」をクリック</li>
-                            </ol>
-                        </div>
-                    </div>
-                </details>
-
-                <div class="api-key-inner">
-                    <label for="apiKeyInput">Gemini APIキー</label>
-                    <div class="api-key-row">
-                        <input type="password" id="apiKeyInput" placeholder="AIzaSy..." autocomplete="off">
-                        <button type="button" id="saveApiKey" class="api-key-save">保存</button>
-                    </div>
-                    <p class="api-key-note">キーはブラウザのlocalStorageに保存されます。外部には送信されません。</p>
-                </div>
-            </div>
-            <div class="api-key-set hidden" id="apiKeySet">
-                <span class="api-key-ok">APIキー設定済み</span>
-                <button type="button" id="clearApiKey" class="api-key-clear">変更</button>
-            </div>
-
             <form id="searchFormTraining" class="search-form training-form">
                 <div class="form-group full-width">
                     <label for="lessonTheme">授業テーマ・単元 <span class="required">*生成に必要</span></label>
