@@ -1,0 +1,1076 @@
+[
+  {
+    "id": "1-1",
+    "name": "Living Word Wall",
+    "category": "ゲーム",
+    "subject": "国語",
+    "grade": [
+      "小1",
+      "小2"
+    ],
+    "activityForm": [
+      "グループ"
+    ],
+    "physicality": "立つ・移動",
+    "tool": "カード・ボード",
+    "questionType": "複数解",
+    "otherRelation": "協力・役割分担",
+    "output": "発言・成果物（文）",
+    "realityConnection": "架空",
+    "timeline": "単発",
+    "evaluationTarget": "語彙理解、表現の多様性",
+    "evaluationMethod": "作成された文の質、発言の適切性",
+    "evaluationTiming": "活動中・活動後"
+  },
+  {
+    "id": "1-2",
+    "name": "サイコロ系ボードゲーム",
+    "category": "ゲーム",
+    "subject": "算数",
+    "grade": [
+      "小1",
+      "小2"
+    ],
+    "activityForm": [
+      "ペア",
+      "グループ"
+    ],
+    "physicality": "着席",
+    "tool": "ボード・サイコロ",
+    "questionType": "正解あり",
+    "otherRelation": "競争",
+    "output": "なし（ゲーム進行のみ）",
+    "realityConnection": "架空",
+    "timeline": "単発",
+    "evaluationTarget": "数え方・位取り・分数の理解と計算",
+    "evaluationMethod": "ゲーム中の動き・得点・正答率",
+    "evaluationTiming": "活動中"
+  },
+  {
+    "id": "1-3",
+    "name": "生き物クエスト・宝探しゲーム",
+    "category": "ゲーム",
+    "subject": "理科",
+    "grade": [
+      "小1",
+      "小2"
+    ],
+    "activityForm": [
+      "グループ"
+    ],
+    "physicality": "立つ・移動・屋外",
+    "tool": "デジタル（スカベンジャーハント）・物理材料",
+    "questionType": "複数解",
+    "otherRelation": "協力",
+    "output": "記録（発見リスト）",
+    "realityConnection": "実社会（生き物観察）",
+    "timeline": "単発",
+    "evaluationTarget": "生き物に関する事実収集、観察精度",
+    "evaluationMethod": "収集した標本・データ・記録",
+    "evaluationTiming": "活動後"
+  },
+  {
+    "id": "1-4",
+    "name": "タイムライン並び替えカードゲーム",
+    "category": "ゲーム",
+    "subject": "歴史・社会",
+    "grade": [
+      "中1",
+      "中2",
+      "中3"
+    ],
+    "activityForm": [
+      "グループ"
+    ],
+    "physicality": "立つ・移動",
+    "tool": "カード",
+    "questionType": "正解あり",
+    "otherRelation": "協力・議論",
+    "output": "成果物（並び替え結果）",
+    "realityConnection": "模擬（歴史的出来事）",
+    "timeline": "単発",
+    "evaluationTarget": "出来事の順序と因果関係の理解",
+    "evaluationMethod": "正答率、議論のプロセス",
+    "evaluationTiming": "活動後"
+  },
+  {
+    "id": "1-5",
+    "name": "歴史トレーディングゲーム",
+    "category": "ゲーム",
+    "subject": "歴史",
+    "grade": [
+      "中1",
+      "中2",
+      "中3"
+    ],
+    "activityForm": [
+      "グループ",
+      "全体"
+    ],
+    "physicality": "立つ・移動",
+    "tool": "カード・トークン",
+    "questionType": "複数解",
+    "otherRelation": "競争・交渉・役割分担",
+    "output": "なし（ゲーム進行のみ）",
+    "realityConnection": "模擬（歴史的シナリオ）",
+    "timeline": "複数時間",
+    "evaluationTarget": "交渉・戦略、歴史的文脈の理解",
+    "evaluationMethod": "ゲーム中の意思決定、発言・議論",
+    "evaluationTiming": "活動中・振り返り"
+  },
+  {
+    "id": "1-6",
+    "name": "デジタルクイズゲーム・Kahoot型",
+    "category": "ゲーム",
+    "subject": "理科",
+    "grade": [
+      "中1",
+      "中2",
+      "中3"
+    ],
+    "activityForm": [
+      "グループ",
+      "全体"
+    ],
+    "physicality": "着席（デバイス使用）",
+    "tool": "デジタル",
+    "questionType": "正解あり",
+    "otherRelation": "競争",
+    "output": "なし（ゲーム進行のみ）",
+    "realityConnection": "架空",
+    "timeline": "単発",
+    "evaluationTarget": "語彙・概念（生態系・人体・気候）の理解",
+    "evaluationMethod": "正答率・得点・反応時間",
+    "evaluationTiming": "活動中"
+  },
+  {
+    "id": "1-7",
+    "name": "ボード型・デジタル戦略ゲーム",
+    "category": "ゲーム",
+    "subject": "歴史・経済",
+    "grade": [
+      "高1",
+      "高2",
+      "高3"
+    ],
+    "activityForm": [
+      "グループ",
+      "全体"
+    ],
+    "physicality": "着席・立つ・移動",
+    "tool": "ボード・デジタル",
+    "questionType": "複数解",
+    "otherRelation": "競争・交渉・役割分担",
+    "output": "なし（ゲーム進行のみ）",
+    "realityConnection": "模擬（貿易・戦争・資源配分）",
+    "timeline": "複数時間・長期",
+    "evaluationTarget": "戦略的思考、交渉力、歴史的理解",
+    "evaluationMethod": "ゲーム中の意思決定、最終結果、議論",
+    "evaluationTiming": "活動中・活動後・振り返り"
+  },
+  {
+    "id": "1-8",
+    "name": "語彙ビンゴ・カードゲーム",
+    "category": "ゲーム",
+    "subject": "言語",
+    "grade": [
+      "高1",
+      "高2",
+      "高3"
+    ],
+    "activityForm": [
+      "グループ",
+      "全体"
+    ],
+    "physicality": "着席・立つ",
+    "tool": "カード・ボード",
+    "questionType": "正解あり",
+    "otherRelation": "競争・議論",
+    "output": "なし・記録（ビンゴ結果）",
+    "realityConnection": "架空",
+    "timeline": "単発",
+    "evaluationTarget": "修辞技法・文学的装置の理解",
+    "evaluationMethod": "正答率、議論への参加度",
+    "evaluationTiming": "活動中・活動後"
+  },
+  {
+    "id": "2-1",
+    "name": "水の旅ロールプレイ",
+    "category": "シミュレーション",
+    "subject": "理科",
+    "grade": [
+      "小1",
+      "小2"
+    ],
+    "activityForm": [
+      "グループ",
+      "全体"
+    ],
+    "physicality": "立つ・移動",
+    "tool": "道具なし（身体で表現）",
+    "questionType": "複数解",
+    "otherRelation": "協力・役割分担",
+    "output": "なし・発言",
+    "realityConnection": "模擬（水循環）",
+    "timeline": "単発",
+    "evaluationTarget": "水循環プロセスの理解、身体表現の適切性",
+    "evaluationMethod": "動きの観察、説明の正確性",
+    "evaluationTiming": "活動中・活動後"
+  },
+  {
+    "id": "2-2",
+    "name": "教室内ミニマーケット",
+    "category": "シミュレーション",
+    "subject": "社会",
+    "grade": [
+      "小1",
+      "小2"
+    ],
+    "activityForm": [
+      "グループ",
+      "全体"
+    ],
+    "physicality": "立つ・移動",
+    "tool": "物理材料（教室通貨・商品）",
+    "questionType": "複数解",
+    "otherRelation": "協力・交渉",
+    "output": "記録（取引記録）",
+    "realityConnection": "模擬（経済活動）",
+    "timeline": "複数時間",
+    "evaluationTarget": "基礎経済概念（供給・需要・交換）の理解",
+    "evaluationMethod": "取引の記録、意思決定、発言",
+    "evaluationTiming": "活動中・活動後・振り返り"
+  },
+  {
+    "id": "2-3",
+    "name": "デジタル生態系シミュレーション",
+    "category": "シミュレーション",
+    "subject": "理科",
+    "grade": [
+      "中1",
+      "中2",
+      "中3"
+    ],
+    "activityForm": [
+      "グループ"
+    ],
+    "physicality": "着席",
+    "tool": "デジタル",
+    "questionType": "複数解",
+    "otherRelation": "協力",
+    "output": "データ・グラフ",
+    "realityConnection": "模擬（生態系）",
+    "timeline": "複数時間",
+    "evaluationTarget": "捕食者・被食者・資源バランスの理解",
+    "evaluationMethod": "調整した変数、結果の分析、グラフ解釈",
+    "evaluationTiming": "活動中・活動後"
+  },
+  {
+    "id": "2-4",
+    "name": "政治的意思決定シミュレーション",
+    "category": "シミュレーション",
+    "subject": "歴史",
+    "grade": [
+      "中1",
+      "中2",
+      "中3"
+    ],
+    "activityForm": [
+      "グループ",
+      "全体"
+    ],
+    "physicality": "着席・立つ",
+    "tool": "シナリオ資料・道具なし",
+    "questionType": "複数解",
+    "otherRelation": "交渉・役割分担",
+    "output": "成果物（決定・契約）・発言",
+    "realityConnection": "模擬（外交・政策決定）",
+    "timeline": "複数時間",
+    "evaluationTarget": "各国立場の理解、交渉力、政治的推論",
+    "evaluationMethod": "議論プロセス、最終合意、説明の正確性",
+    "evaluationTiming": "活動中・活動後・振り返り"
+  },
+  {
+    "id": "2-5",
+    "name": "模擬国連・模擬裁判",
+    "category": "シミュレーション",
+    "subject": "社会",
+    "grade": [
+      "高1",
+      "高2",
+      "高3"
+    ],
+    "activityForm": [
+      "グループ",
+      "全体"
+    ],
+    "physicality": "着席・立つ",
+    "tool": "シナリオ資料・弁論資料",
+    "questionType": "複数解",
+    "otherRelation": "競争・議論・役割分担",
+    "output": "発言・成果物（決定・判決）",
+    "realityConnection": "模擬（国際関係・法廷）",
+    "timeline": "複数時間・長期",
+    "evaluationTarget": "説得力、根拠、ルールの理解、批判的思考",
+    "evaluationMethod": "弁論内容、判定結果、議論のプロセス",
+    "evaluationTiming": "活動中・活動後・振り返り"
+  },
+  {
+    "id": "2-6",
+    "name": "気候変動・感染症拡大シミュレーション",
+    "category": "シミュレーション",
+    "subject": "理科",
+    "grade": [
+      "高1",
+      "高2",
+      "高3"
+    ],
+    "activityForm": [
+      "グループ"
+    ],
+    "physicality": "着席・立つ",
+    "tool": "デジタル・グラフ資料",
+    "questionType": "複数解",
+    "otherRelation": "協力・役割分担",
+    "output": "データ・分析レポート",
+    "realityConnection": "実社会（気候・公衆衛生）",
+    "timeline": "複数時間・長期",
+    "evaluationTarget": "複雑システムの理解、政策分析、予測推論",
+    "evaluationMethod": "仮説検証プロセス、予測の妥当性、政策提言の質",
+    "evaluationTiming": "活動中・活動後・振り返り"
+  },
+  {
+    "id": "3-1",
+    "name": "リーダーシアター",
+    "category": "ロールプレイ・演劇",
+    "subject": "国語",
+    "grade": [
+      "小1",
+      "小2"
+    ],
+    "activityForm": [
+      "グループ",
+      "全体"
+    ],
+    "physicality": "着席・立つ",
+    "tool": "テキスト・台本",
+    "questionType": "複数解",
+    "otherRelation": "協力・役割分担",
+    "output": "発言・パフォーマンス",
+    "realityConnection": "架空（物語）",
+    "timeline": "単発",
+    "evaluationTarget": "音韻認識、流ちょう性、登場人物理解",
+    "evaluationMethod": "読みの質、感情表現、相互評価",
+    "evaluationTiming": "活動中・活動後"
+  },
+  {
+    "id": "3-2",
+    "name": "コミュニティヘルパーロールプレイ",
+    "category": "ロールプレイ・演劇",
+    "subject": "社会",
+    "grade": [
+      "小1",
+      "小2"
+    ],
+    "activityForm": [
+      "ペア",
+      "グループ"
+    ],
+    "physicality": "立つ・移動",
+    "tool": "小道具・衣装",
+    "questionType": "複数解",
+    "otherRelation": "協力・役割分担",
+    "output": "発言・パフォーマンス",
+    "realityConnection": "実社会（職業・コミュニティサービス）",
+    "timeline": "単発",
+    "evaluationTarget": "職業理解、協力、コミュニケーション",
+    "evaluationMethod": "役割演技の適切性、協力度、質問への応答",
+    "evaluationTiming": "活動中・活動後"
+  },
+  {
+    "id": "3-3",
+    "name": "歴史上の人物の一日",
+    "category": "ロールプレイ・演劇",
+    "subject": "歴史",
+    "grade": [
+      "中1",
+      "中2",
+      "中3"
+    ],
+    "activityForm": [
+      "個人",
+      "グループ"
+    ],
+    "physicality": "着席・立つ・移動",
+    "tool": "台本・資料",
+    "questionType": "複数解",
+    "otherRelation": "協力・議論",
+    "output": "発言・日記・パフォーマンス",
+    "realityConnection": "模擬（歴史的出来事）",
+    "timeline": "複数時間",
+    "evaluationTarget": "歴史的文脈の理解、共感的思考、説得力",
+    "evaluationMethod": "台詞の歴史的適切性、感情表現、議論のプロセス",
+    "evaluationTiming": "活動中・活動後・振り返り"
+  },
+  {
+    "id": "3-4",
+    "name": "登場人物の行動をめぐるディベート型ロールプレイ",
+    "category": "ロールプレイ・演劇",
+    "subject": "国語",
+    "grade": [
+      "中1",
+      "中2",
+      "中3"
+    ],
+    "activityForm": [
+      "グループ",
+      "全体"
+    ],
+    "physicality": "着席・立つ",
+    "tool": "テキスト・台本",
+    "questionType": "複数解",
+    "otherRelation": "競争・議論",
+    "output": "発言・ディベート結果",
+    "realityConnection": "架空（文学）",
+    "timeline": "複数時間",
+    "evaluationTarget": "文学的解釈、批判的思考、弁論能力",
+    "evaluationMethod": "議論の根拠、解釈の多様性、説得力",
+    "evaluationTiming": "活動中・活動後・振り返り"
+  },
+  {
+    "id": "3-5",
+    "name": "模擬裁判・公聴会",
+    "category": "ロールプレイ・演劇",
+    "subject": "社会",
+    "grade": [
+      "高1",
+      "高2",
+      "高3"
+    ],
+    "activityForm": [
+      "グループ",
+      "全体"
+    ],
+    "physicality": "着席・立つ",
+    "tool": "法的資料・証拠資料",
+    "questionType": "正解あり",
+    "otherRelation": "競争・議論・役割分担",
+    "output": "発言・判決・記録",
+    "realityConnection": "模擬（法廷プロセス）",
+    "timeline": "複数時間・長期",
+    "evaluationTarget": "法律知識、論理的思考、弁論能力、公正性",
+    "evaluationMethod": "法的根拠の正確性、論理展開、判定の妥当性",
+    "evaluationTiming": "活動中・活動後・振り返り"
+  },
+  {
+    "id": "3-6",
+    "name": "演劇・小説場面の上演",
+    "category": "ロールプレイ・演劇",
+    "subject": "国語",
+    "grade": [
+      "高1",
+      "高2",
+      "高3"
+    ],
+    "activityForm": [
+      "グループ",
+      "全体"
+    ],
+    "physicality": "立つ・移動・パフォーマンス",
+    "tool": "台本・衣装・小道具",
+    "questionType": "複数解",
+    "otherRelation": "協力・役割分担",
+    "output": "パフォーマンス・舞台作品",
+    "realityConnection": "架空（文学・演劇）",
+    "timeline": "複数時間・長期",
+    "evaluationTarget": "文学的理解、表現力、舞台化の創意工夫",
+    "evaluationMethod": "表現の質、観客の反応、制作プロセス",
+    "evaluationTiming": "活動中・活動後・振り返り"
+  },
+  {
+    "id": "4-1",
+    "name": "植物成長ミニ調査",
+    "category": "探究・問題解決",
+    "subject": "理科",
+    "grade": [
+      "小1",
+      "小2"
+    ],
+    "activityForm": [
+      "個人",
+      "グループ"
+    ],
+    "physicality": "着席・立つ・屋外",
+    "tool": "植物・観察記録表",
+    "questionType": "複数解",
+    "otherRelation": "協力",
+    "output": "記録・スケッチ・グラフ",
+    "realityConnection": "実社会（植物観察）",
+    "timeline": "長期（数週間～数ヶ月）",
+    "evaluationTarget": "観察精度、パターン認識、科学的思考",
+    "evaluationMethod": "記録の正確性、グラフの質、考察の深さ",
+    "evaluationTiming": "活動中・活動後"
+  },
+  {
+    "id": "4-2",
+    "name": "地域課題プロジェクト",
+    "category": "探究・問題解決",
+    "subject": "社会",
+    "grade": [
+      "小1",
+      "小2"
+    ],
+    "activityForm": [
+      "グループ"
+    ],
+    "physicality": "立つ・移動・屋外",
+    "tool": "インタビューガイド・カメラ・地図",
+    "questionType": "複数解",
+    "otherRelation": "協力・インタビュー",
+    "output": "記録・ポスター・提案",
+    "realityConnection": "実社会（地域課題）",
+    "timeline": "複数時間・長期",
+    "evaluationTarget": "コミュニティ理解、問題設定、提案の実現性",
+    "evaluationMethod": "リサーチのプロセス、提案の質、実行可能性",
+    "evaluationTiming": "活動中・活動後・振り返り"
+  },
+  {
+    "id": "4-3",
+    "name": "紙飛行機・ペットボトルロケットチャレンジ",
+    "category": "探究・問題解決",
+    "subject": "理科",
+    "grade": [
+      "中1",
+      "中2",
+      "中3"
+    ],
+    "activityForm": [
+      "ペア",
+      "グループ"
+    ],
+    "physicality": "立つ・移動・屋外",
+    "tool": "材料・測定器",
+    "questionType": "複数解",
+    "otherRelation": "競争・協力",
+    "output": "成果物（飛行体）・記録・分析",
+    "realityConnection": "実社会（物理・工学）",
+    "timeline": "複数時間",
+    "evaluationTarget": "物理的原理の理解、試行錯誤、設計最適化",
+    "evaluationMethod": "飛行体の性能、設計プロセス、分析の正確性",
+    "evaluationTiming": "活動中・活動後"
+  },
+  {
+    "id": "4-4",
+    "name": "未解決の歴史ミステリー・難民の日記探究",
+    "category": "探究・問題解決",
+    "subject": "歴史",
+    "grade": [
+      "中1",
+      "中2",
+      "中3"
+    ],
+    "activityForm": [
+      "個人",
+      "グループ"
+    ],
+    "physicality": "着席",
+    "tool": "一次資料・史料・デジタルアーカイブ",
+    "questionType": "複数解",
+    "otherRelation": "協力・議論",
+    "output": "分析論文・プレゼンテーション",
+    "realityConnection": "実社会（歴史学）",
+    "timeline": "複数時間・長期",
+    "evaluationTarget": "史料解釈、批判的思考、仮説構築",
+    "evaluationMethod": "論文の論理性、根拠の妥当性、新しい洞察",
+    "evaluationTiming": "活動中・活動後・振り返り"
+  },
+  {
+    "id": "4-5",
+    "name": "水ろ過プロトタイプの設計・テスト",
+    "category": "探究・問題解決",
+    "subject": "理科",
+    "grade": [
+      "高1",
+      "高2",
+      "高3"
+    ],
+    "activityForm": [
+      "ペア",
+      "グループ"
+    ],
+    "physicality": "着席・立つ",
+    "tool": "実験材料・計測機器",
+    "questionType": "複数解",
+    "otherRelation": "協力・役割分担",
+    "output": "プロトタイプ・テスト記録・分析レポート",
+    "realityConnection": "実社会（環境技術）",
+    "timeline": "複数時間・長期",
+    "evaluationTarget": "エンジニアリング設計、実験精度、問題解決能力",
+    "evaluationMethod": "プロトタイプの性能、テストプロセスの科学性、改善案",
+    "evaluationTiming": "活動中・活動後・振り返り"
+  },
+  {
+    "id": "4-6",
+    "name": "ポリシーブリーフ",
+    "category": "探究・問題解決",
+    "subject": "社会",
+    "grade": [
+      "高1",
+      "高2",
+      "高3"
+    ],
+    "activityForm": [
+      "個人",
+      "グループ"
+    ],
+    "physicality": "着席",
+    "tool": "リサーチ資料・データベース",
+    "questionType": "複数解",
+    "otherRelation": "協力・議論",
+    "output": "政策提言書・プレゼンテーション",
+    "realityConnection": "実社会（政策分析）",
+    "timeline": "複数時間・長期",
+    "evaluationTarget": "政策分析力、論拠の説得性、実現可能性",
+    "evaluationMethod": "論文の論理性、根拠データ、政策提言の質",
+    "evaluationTiming": "活動中・活動後・振り返り"
+  },
+  {
+    "id": "5-1",
+    "name": "橋づくり・シェルター作りチャレンジ",
+    "category": "ものづくり・デザイン",
+    "subject": "理科",
+    "grade": [
+      "小1",
+      "小2"
+    ],
+    "activityForm": [
+      "ペア",
+      "グループ"
+    ],
+    "physicality": "立つ・移動",
+    "tool": "材料キット・構造部品",
+    "questionType": "複数解",
+    "otherRelation": "協力・役割分担",
+    "output": "成果物（構造物）",
+    "realityConnection": "実社会（工学・建築）",
+    "timeline": "複数時間",
+    "evaluationTarget": "構造的思考、デザイン最適化、協力",
+    "evaluationMethod": "成果物の耐荷重性、デザイン過程、チームワーク",
+    "evaluationTiming": "活動中・活動後"
+  },
+  {
+    "id": "5-2",
+    "name": "夢のコミュニティ設計",
+    "category": "ものづくり・デザイン",
+    "subject": "社会",
+    "grade": [
+      "小1",
+      "小2"
+    ],
+    "activityForm": [
+      "個人",
+      "グループ"
+    ],
+    "physicality": "着席",
+    "tool": "画用紙・色鉛筆・建築資料",
+    "questionType": "複数解",
+    "otherRelation": "協力・発表",
+    "output": "設計図・模型・プレゼンテーション",
+    "realityConnection": "架空（創造的デザイン）",
+    "timeline": "複数時間",
+    "evaluationTarget": "創造性、空間設計思考、表現力",
+    "evaluationMethod": "設計の創意工夫、機能性、プレゼンの質",
+    "evaluationTiming": "活動中・活動後"
+  },
+  {
+    "id": "5-3",
+    "name": "ロボティクス・レスキューロボットチャレンジ",
+    "category": "ものづくり・デザイン",
+    "subject": "技術",
+    "grade": [
+      "中1",
+      "中2",
+      "中3"
+    ],
+    "activityForm": [
+      "ペア",
+      "グループ"
+    ],
+    "physicality": "着席・立つ",
+    "tool": "ロボティクスキット・プログラミングツール",
+    "questionType": "複数解",
+    "otherRelation": "協力・競争",
+    "output": "ロボット・プログラム・報告書",
+    "realityConnection": "実社会（ロボティクス・レスキュー）",
+    "timeline": "複数時間・長期",
+    "evaluationTarget": "プログラミング思考、エンジニアリング設計、問題解決",
+    "evaluationMethod": "ロボット性能、コード品質、設計プロセス",
+    "evaluationTiming": "活動中・活動後・振り返り"
+  },
+  {
+    "id": "5-4",
+    "name": "3D彫刻・ウェアラブルアートプロジェクト",
+    "category": "ものづくり・デザイン",
+    "subject": "芸術",
+    "grade": [
+      "中1",
+      "中2",
+      "中3"
+    ],
+    "activityForm": [
+      "個人",
+      "グループ"
+    ],
+    "physicality": "立つ・移動",
+    "tool": "彫刻材料・3D設計ソフト",
+    "questionType": "複数解",
+    "otherRelation": "協力・発表",
+    "output": "芸術作品・ウェアラブルアイテム",
+    "realityConnection": "架空（芸術表現）",
+    "timeline": "複数時間・長期",
+    "evaluationTarget": "美的感覚、デザイン思考、表現力",
+    "evaluationMethod": "作品の完成度、創意工夫、プレゼンの質",
+    "evaluationTiming": "活動中・活動後・振り返り"
+  },
+  {
+    "id": "5-5",
+    "name": "ソーラークッカー・風力タービンプロトタイプ",
+    "category": "ものづくり・デザイン",
+    "subject": "理科",
+    "grade": [
+      "高1",
+      "高2",
+      "高3"
+    ],
+    "activityForm": [
+      "ペア",
+      "グループ"
+    ],
+    "physicality": "立つ・移動",
+    "tool": "材料キット・計測器",
+    "questionType": "複数解",
+    "otherRelation": "協力・役割分担",
+    "output": "プロトタイプ・性能試験結果・報告書",
+    "realityConnection": "実社会（再生可能エネルギー）",
+    "timeline": "複数時間・長期",
+    "evaluationTarget": "エネルギー科学、工学設計、持続可能性思考",
+    "evaluationMethod": "プロトタイプ性能、設計の効率性、環境配慮",
+    "evaluationTiming": "活動中・活動後・振り返り"
+  },
+  {
+    "id": "5-6",
+    "name": "デジタルメディアキャンペーン・インスタレーション",
+    "category": "ものづくり・デザイン",
+    "subject": "芸術",
+    "grade": [
+      "高1",
+      "高2",
+      "高3"
+    ],
+    "activityForm": [
+      "グループ"
+    ],
+    "physicality": "立つ・移動",
+    "tool": "デジタルツール・メディア機器",
+    "questionType": "複数解",
+    "otherRelation": "協力・役割分担",
+    "output": "メディア作品・インスタレーション・キャンペーン",
+    "realityConnection": "実社会（社会啓発・メディアアート）",
+    "timeline": "複数時間・長期",
+    "evaluationTarget": "デジタルリテラシー、メッセージング、創造性",
+    "evaluationMethod": "メッセージの説得性、作品の完成度、社会影響",
+    "evaluationTiming": "活動中・活動後・振り返り"
+  },
+  {
+    "id": "6-1",
+    "name": "学校ビオトープ・生物多様性サーベイ",
+    "category": "フィールドワーク・地域連携",
+    "subject": "理科",
+    "grade": [
+      "小1",
+      "小2"
+    ],
+    "activityForm": [
+      "グループ",
+      "全体"
+    ],
+    "physicality": "立つ・移動・屋外",
+    "tool": "採集用具・分類図鑑・記録機器",
+    "questionType": "複数解",
+    "otherRelation": "協力",
+    "output": "記録・分類表・ポスター",
+    "realityConnection": "実社会（生物多様性保全）",
+    "timeline": "複数時間・長期",
+    "evaluationTarget": "生態系理解、分類思考、保全意識",
+    "evaluationMethod": "標本の正確性、記録の完全性、考察の深さ",
+    "evaluationTiming": "活動中・活動後・振り返り"
+  },
+  {
+    "id": "6-2",
+    "name": "近所のコミュニティウォーク",
+    "category": "フィールドワーク・地域連携",
+    "subject": "社会",
+    "grade": [
+      "小1",
+      "小2"
+    ],
+    "activityForm": [
+      "グループ"
+    ],
+    "physicality": "立つ・移動・屋外",
+    "tool": "地図・カメラ・インタビューガイド",
+    "questionType": "複数解",
+    "otherRelation": "協力・インタビュー",
+    "output": "地図・記録・インタビュー音声",
+    "realityConnection": "実社会（コミュニティ理解）",
+    "timeline": "複数時間",
+    "evaluationTarget": "地域理解、観察力、コミュニケーション",
+    "evaluationMethod": "地図の正確性、インタビュー内容、気づきの質",
+    "evaluationTiming": "活動中・活動後"
+  },
+  {
+    "id": "6-3",
+    "name": "河川・大気質モニタリングプロジェクト",
+    "category": "フィールドワーク・地域連携",
+    "subject": "理科",
+    "grade": [
+      "中1",
+      "中2",
+      "中3"
+    ],
+    "activityForm": [
+      "グループ"
+    ],
+    "physicality": "立つ・移動・屋外",
+    "tool": "計測器・サンプリング器具・データベース",
+    "questionType": "複数解",
+    "otherRelation": "協力・市民科学",
+    "output": "データ・グラフ・環境レポート",
+    "realityConnection": "実社会（環境科学・市民科学）",
+    "timeline": "長期（継続的モニタリング）",
+    "evaluationTarget": "データ解釈、傾向分析、環境問題理解",
+    "evaluationMethod": "測定精度、グラフの正確性、考察の深さ",
+    "evaluationTiming": "活動中・活動後・振り返り"
+  },
+  {
+    "id": "6-4",
+    "name": "オーラルヒストリーウォーク・長老インタビュー",
+    "category": "フィールドワーク・地域連携",
+    "subject": "社会",
+    "grade": [
+      "中1",
+      "中2",
+      "中3"
+    ],
+    "activityForm": [
+      "ペア",
+      "グループ"
+    ],
+    "physicality": "立つ・移動・着席",
+    "tool": "録音機器・インタビューガイド",
+    "questionType": "複数解",
+    "otherRelation": "インタビュー・傾聴",
+    "output": "音声記録・トランスクリプト・報告書",
+    "realityConnection": "実社会（地域史・デジタルアーカイブ）",
+    "timeline": "複数時間・長期",
+    "evaluationTarget": "傾聴力、地域史理解、インタビュー技法",
+    "evaluationMethod": "インタビュー技法、記録の正確性、分析の深さ",
+    "evaluationTiming": "活動中・活動後・振り返り"
+  },
+  {
+    "id": "6-5",
+    "name": "環境影響評価・市民科学プロジェクト",
+    "category": "フィールドワーク・地域連携",
+    "subject": "理科",
+    "grade": [
+      "高1",
+      "高2",
+      "高3"
+    ],
+    "activityForm": [
+      "グループ"
+    ],
+    "physicality": "立つ・移動・屋外",
+    "tool": "調査器具・データ解析ソフト・GIS",
+    "questionType": "複数解",
+    "otherRelation": "協力・市民参加",
+    "output": "環境影響評価書・政策提言",
+    "realityConnection": "実社会（環境政策・市民参加）",
+    "timeline": "複数時間・長期",
+    "evaluationTarget": "科学的分析、政策分析、市民参加",
+    "evaluationMethod": "調査の科学性、分析の正確性、提言の実現性",
+    "evaluationTiming": "活動中・活動後・振り返り"
+  },
+  {
+    "id": "6-6",
+    "name": "サービスラーニング・公共アートプロジェクト",
+    "category": "フィールドワーク・地域連携",
+    "subject": "社会",
+    "grade": [
+      "高1",
+      "高2",
+      "高3"
+    ],
+    "activityForm": [
+      "グループ"
+    ],
+    "physicality": "立つ・移動・屋外",
+    "tool": "アート材料・設計ツール",
+    "questionType": "複数解",
+    "otherRelation": "協力・コミュニティサービス",
+    "output": "公共アート作品・プロジェクト報告書",
+    "realityConnection": "実社会（社会貢献・地域活性化）",
+    "timeline": "複数時間・長期",
+    "evaluationTarget": "社会的責任、創造性、コミュニティ理解",
+    "evaluationMethod": "プロジェクトのコミュニティ影響、作品の質、反省的思考",
+    "evaluationTiming": "活動中・活動後・振り返り"
+  },
+  {
+    "id": "7-1",
+    "name": "ギャラリーウォーク発表",
+    "category": "協働発表・ピアティーチング",
+    "subject": "国語",
+    "grade": [
+      "小1",
+      "小2"
+    ],
+    "activityForm": [
+      "個人",
+      "グループ"
+    ],
+    "physicality": "立つ・移動",
+    "tool": "ポスター・展示資料",
+    "questionType": "複数解",
+    "otherRelation": "発表・相互評価",
+    "output": "ポスター・相互フィードバック",
+    "realityConnection": "架空（学習展示）",
+    "timeline": "単発",
+    "evaluationTarget": "プレゼンテーション能力、相互評価",
+    "evaluationMethod": "ポスターの質、説明の明確さ、フィードバック内容",
+    "evaluationTiming": "活動中・活動後"
+  },
+  {
+    "id": "7-2",
+    "name": "グループダンス・音楽パフォーマンス",
+    "category": "協働発表・ピアティーチング",
+    "subject": "芸術",
+    "grade": [
+      "小1",
+      "小2"
+    ],
+    "activityForm": [
+      "グループ",
+      "全体"
+    ],
+    "physicality": "立つ・移動・パフォーマンス",
+    "tool": "音楽・衣装・舞台",
+    "questionType": "複数解",
+    "otherRelation": "協力・役割分担",
+    "output": "パフォーマンス",
+    "realityConnection": "架空（芸術表現）",
+    "timeline": "複数時間",
+    "evaluationTarget": "表現力、協力、音楽感覚",
+    "evaluationMethod": "パフォーマンスの完成度、チームワーク、観客反応",
+    "evaluationTiming": "活動中・活動後"
+  },
+  {
+    "id": "7-3",
+    "name": "サイエンスフェア・ヒストリーフェア",
+    "category": "協働発表・ピアティーチング",
+    "subject": "理科",
+    "grade": [
+      "中1",
+      "中2",
+      "中3"
+    ],
+    "activityForm": [
+      "個人",
+      "グループ"
+    ],
+    "physicality": "立つ・移動",
+    "tool": "展示資料・プレゼン機器",
+    "questionType": "複数解",
+    "otherRelation": "発表・相互評価",
+    "output": "ポスター・プレゼン・相互評価票",
+    "realityConnection": "実社会（科学コミュニケーション）",
+    "timeline": "複数時間",
+    "evaluationTarget": "研究成果の表現、質問への対応、ピアレビュー",
+    "evaluationMethod": "展示の質、説明の科学性、相互評価内容",
+    "evaluationTiming": "活動中・活動後・振り返り"
+  },
+  {
+    "id": "7-4",
+    "name": "文学サークル発表",
+    "category": "協働発表・ピアティーチング",
+    "subject": "国語",
+    "grade": [
+      "中1",
+      "中2",
+      "中3"
+    ],
+    "activityForm": [
+      "グループ",
+      "全体"
+    ],
+    "physicality": "着席・立つ",
+    "tool": "文学作品・プレゼン資料",
+    "questionType": "複数解",
+    "otherRelation": "発表・議論",
+    "output": "発表・相互コメント",
+    "realityConnection": "架空（文学）",
+    "timeline": "複数時間",
+    "evaluationTarget": "文学解釈、表現力、批判的思考",
+    "evaluationMethod": "解釈の深さ、プレゼン質、議論への参加",
+    "evaluationTiming": "活動中・活動後・振り返り"
+  },
+  {
+    "id": "7-5",
+    "name": "生徒主導のミニ講義・ジグソー学習",
+    "category": "協働発表・ピアティーチング",
+    "subject": "全教科",
+    "grade": [
+      "高1",
+      "高2",
+      "高3"
+    ],
+    "activityForm": [
+      "個人",
+      "グループ"
+    ],
+    "physicality": "着席・立つ",
+    "tool": "教材・プレゼン資料",
+    "questionType": "複数解",
+    "otherRelation": "ティーチング・協力",
+    "output": "講義・指導資料・学習記録",
+    "realityConnection": "架空（ピアティーチング）",
+    "timeline": "複数時間",
+    "evaluationTarget": "教授力、深い理解、協力学習",
+    "evaluationMethod": "講義の明確さ、質問への対応、学習成果",
+    "evaluationTiming": "活動中・活動後・振り返り"
+  },
+  {
+    "id": "7-6",
+    "name": "アンサンブル・合唱・演劇公演",
+    "category": "協働発表・ピアティーチング",
+    "subject": "芸術",
+    "grade": [
+      "高1",
+      "高2",
+      "高3"
+    ],
+    "activityForm": [
+      "グループ",
+      "全体"
+    ],
+    "physicality": "立つ・移動・パフォーマンス",
+    "tool": "楽器・台本・舞台",
+    "questionType": "複数解",
+    "otherRelation": "協力・役割分担",
+    "output": "パフォーマンス・作品",
+    "realityConnection": "実社会（芸術公演）",
+    "timeline": "複数時間・長期",
+    "evaluationTarget": "表現力、協力、音楽性",
+    "evaluationMethod": "パフォーマンスの完成度、チームワーク、社会的影響",
+    "evaluationTiming": "活動中・活動後・振り返り"
+  }
+]

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学びデザインシステム — 設計支援UI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- ヘッダ -->
+        <header class="header">
+            <h1>学びデザインシステム</h1>
+            <p class="subtitle">授業活動の設計支援ツール</p>
+            <p class="description">モードを選んで条件を入力し、最適な授業活動を検索・生成します。</p>
+        </header>
+
+        <!-- モード切替 -->
+        <div class="mode-switcher">
+            <button class="mode-btn active" data-mode="explore">探求型</button>
+            <button class="mode-btn" data-mode="training">習得型</button>
+        </div>
+
+        <!-- 探求型フォーム -->
+        <section class="search-section" id="formExplore">
+            <h2>活動を検索 <span class="mode-label explore">探求型</span></h2>
+            <p class="form-desc">体験的・ゲーム的学習の事例から検索します（48事例）</p>
+            <form id="searchFormExplore" class="search-form">
+                <div class="form-group">
+                    <label for="subject">学習対象（教科）</label>
+                    <select id="subject" name="subject">
+                        <option value="">すべて</option>
+                        <option value="国語">国語</option>
+                        <option value="算数">算数</option>
+                        <option value="理科">理科</option>
+                        <option value="社会">社会</option>
+                        <option value="歴史">歴史</option>
+                        <option value="言語">言語</option>
+                        <option value="経済">経済</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="grade">学年</label>
+                    <select id="grade" name="grade">
+                        <option value="">すべて</option>
+                        <option value="小1">小学1年</option>
+                        <option value="小2">小学2年</option>
+                        <option value="小3">小学3年</option>
+                        <option value="小4">小学4年</option>
+                        <option value="小5">小学5年</option>
+                        <option value="小6">小学6年</option>
+                        <option value="中1">中学1年</option>
+                        <option value="中2">中学2年</option>
+                        <option value="中3">中学3年</option>
+                        <option value="高1">高校1年</option>
+                        <option value="高2">高校2年</option>
+                        <option value="高3">高校3年</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>活動の形（複数選択可）</label>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="activityForm" value="個人"> 個人</label>
+                        <label><input type="checkbox" name="activityForm" value="ペア"> ペア</label>
+                        <label><input type="checkbox" name="activityForm" value="グループ"> グループ</label>
+                        <label><input type="checkbox" name="activityForm" value="全体"> 全体</label>
+                    </div>
+                </div>
+                <button type="submit" class="search-button explore">検索</button>
+            </form>
+        </section>
+
+        <!-- 習得型フォーム -->
+        <section class="search-section hidden" id="formTraining">
+            <h2>活動を生成・検索 <span class="mode-label training">習得型</span></h2>
+            <p class="form-desc">目標から逆算し、スキルを身につける授業活動を提案します</p>
+
+            <!-- APIキー設定 -->
+            <div class="api-key-section" id="apiKeySection">
+                <div class="api-key-inner">
+                    <label for="apiKeyInput">Gemini APIキー</label>
+                    <div class="api-key-row">
+                        <input type="password" id="apiKeyInput" placeholder="AIzaSy..." autocomplete="off">
+                        <button type="button" id="saveApiKey" class="api-key-save">保存</button>
+                    </div>
+                    <p class="api-key-note">キーはブラウザのlocalStorageに保存されます。外部には送信されません。</p>
+                </div>
+            </div>
+            <div class="api-key-set hidden" id="apiKeySet">
+                <span class="api-key-ok">APIキー設定済み</span>
+                <button type="button" id="clearApiKey" class="api-key-clear">変更</button>
+            </div>
+
+            <form id="searchFormTraining" class="search-form training-form">
+                <div class="form-group full-width">
+                    <label for="lessonTheme">授業テーマ・単元 <span class="required">*生成に必要</span></label>
+                    <input type="text" id="lessonTheme" placeholder="例: 江戸時代の社会と文化、分数の割り算、環境問題" autocomplete="off">
+                </div>
+                <div class="form-group">
+                    <label for="level">学習者レベル</label>
+                    <select id="level" name="level">
+                        <option value="">すべて</option>
+                        <option value="初心者">入門（初めて学ぶ）</option>
+                        <option value="中級">実践（基礎を理解している）</option>
+                        <option value="管理職">リーダー・指導層</option>
+                        <option value="エンジニア">専門職（高度な知識・技術を持つ）</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="activityType">活動タイプ</label>
+                    <select id="activityType" name="activityType">
+                        <option value="">すべて</option>
+                        <option value="ハンズオン">ハンズオン（手を動かす）</option>
+                        <option value="ケーススタディ">ケーススタディ（事例分析）</option>
+                        <option value="ロールプレイ">ロールプレイ（役割体験）</option>
+                        <option value="グループワーク">グループワーク（協働）</option>
+                        <option value="振り返り">振り返り（整理・言語化）</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="duration">所要時間</label>
+                    <select id="duration" name="duration">
+                        <option value="">すべて</option>
+                        <option value="15分">15分</option>
+                        <option value="30分">30分</option>
+                        <option value="60分">60分</option>
+                        <option value="半日以上">半日以上</option>
+                    </select>
+                </div>
+                <div class="button-group">
+                    <button type="button" id="generateBtn" class="generate-button">AIで活動を生成</button>
+                </div>
+            </form>
+        </section>
+
+        <!-- 検索結果 -->
+        <section class="results-section">
+            <h2 id="resultsTitle">検索結果</h2>
+            <div id="results" class="results-container">
+                <p class="no-results">検索条件を入力して操作してください。</p>
+            </div>
+        </section>
+
+        <!-- 詳細表示モーダル -->
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2 id="modalTitle"></h2>
+                <div id="modalBody"></div>
+                <button id="adoptButton" class="adopt-button">この事例を採用</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>学びデザインシステム | 探求型・習得型 授業活動設計支援</p>
+        <p><small>最新版：2026年4月</small></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
