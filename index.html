@@ -3,10 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>先生のアトリエ — 授業活動設計支援</title>
+    <title>先生のアトリエ — AI授業活動設計支援</title>
+    <meta name="description" content="先生のアトリエ — 学習目標を入力するだけで、AIが最適な授業活動を設計します。ハンズオン・ケーススタディ・ロールプレイなど5種類の活動タイプに対応。教師・研修担当者向け無料ツール。">
+    <meta property="og:title" content="先生のアトリエ — AI授業活動設計支援">
+    <meta property="og:description" content="学習目標を入力するだけで、AIが最適な授業活動を設計します。教師・研修担当者向け無料ツール。">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="先生のアトリエ — AI授業活動設計支援">
+    <meta name="twitter:description" content="学習目標を入力するだけで、AIが最適な授業活動を設計します。">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Noto+Serif+JP:wght@400;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
@@ -79,6 +86,40 @@
 
             <!-- APIキー設定 -->
             <div class="api-key-section" id="apiKeySection">
+
+                <!-- API取得ガイド -->
+                <details class="api-guide">
+                    <summary class="api-guide-summary">APIキーとは？取得方法・料金について</summary>
+                    <div class="api-guide-body">
+                        <div class="api-guide-grid">
+                            <div class="api-guide-item">
+                                <div class="api-guide-icon">🔑</div>
+                                <h4>APIキーとは</h4>
+                                <p>このツールはGoogleの生成AI「Gemini」を使って授業活動を設計します。APIキーは、あなたのGoogleアカウントとGeminiをつなぐ認証コードです。</p>
+                            </div>
+                            <div class="api-guide-item">
+                                <div class="api-guide-icon">💴</div>
+                                <h4>料金について</h4>
+                                <p>無料枠：1日500回まで無料。有料時でも1回あたり約0.1円。通常の授業準備では無料枠で十分対応できます。</p>
+                            </div>
+                            <div class="api-guide-item">
+                                <div class="api-guide-icon">🔒</div>
+                                <h4>セキュリティ</h4>
+                                <p>入力したAPIキーはあなたのブラウザ内にのみ保存されます。このサイトのサーバーには一切送信されません。</p>
+                            </div>
+                        </div>
+                        <div class="api-guide-steps">
+                            <h4>取得手順（約2分）</h4>
+                            <ol>
+                                <li><a href="https://aistudio.google.com/app/apikey" target="_blank" rel="noopener noreferrer">Google AI Studio</a> を開く（Googleアカウントが必要です）</li>
+                                <li>「APIキーを作成」をクリック</li>
+                                <li>表示されたキー（「AIzaSy...」から始まる文字列）をコピー</li>
+                                <li>下のAPIキー入力欄に貼り付けて「保存」をクリック</li>
+                            </ol>
+                        </div>
+                    </div>
+                </details>
+
                 <div class="api-key-inner">
                     <label for="apiKeyInput">Gemini APIキー</label>
                     <div class="api-key-row">
@@ -185,9 +226,19 @@
         </div>
     </div>
 
+    <!-- フィードバック -->
+    <section class="feedback-section">
+        <div class="feedback-inner">
+            <p class="feedback-label">Feedback</p>
+            <h2>使ってみた感想を聞かせてください</h2>
+            <p class="feedback-desc">改善のご意見・ご感想をお待ちしています。<br>いただいたフィードバックは今後の開発に活かします。</p>
+            <a href="FEEDBACK_FORM_URL" target="_blank" rel="noopener noreferrer" class="feedback-btn">フィードバックを送る</a>
+        </div>
+    </section>
+
     <footer class="footer">
-        <p>先生のアトリエ | 授業活動設計支援</p>
-        <p><small>最新版：2026年4月</small></p>
+        <p>先生のアトリエ | AI授業活動設計支援</p>
+        <p><small>&copy; 2026 先生のアトリエ</small></p>
     </footer>
 
     <script src="script.js"></script>
