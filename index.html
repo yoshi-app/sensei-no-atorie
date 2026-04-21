@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>学びデザインシステム — 設計支援UI</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
@@ -12,17 +14,17 @@
         <header class="header">
             <h1>学びデザインシステム</h1>
             <p class="subtitle">授業活動の設計支援ツール</p>
-            <p class="description">モードを選んで条件を入力し、最適な授業活動を検索・生成します。</p>
+            <p class="description">条件を入力すると、目標に合った授業活動をAIが提案します。</p>
         </header>
 
         <!-- モード切替 -->
         <div class="mode-switcher">
-            <button class="mode-btn active" data-mode="explore">探求型</button>
-            <button class="mode-btn" data-mode="training">習得型</button>
+            <button class="mode-btn" data-mode="explore" style="display:none">探求型</button>
+            <button class="mode-btn active" data-mode="training">習得型</button>
         </div>
 
         <!-- 探求型フォーム -->
-        <section class="search-section" id="formExplore">
+        <section class="search-section hidden" id="formExplore">
             <h2>活動を検索 <span class="mode-label explore">探求型</span></h2>
             <p class="form-desc">体験的・ゲーム的学習の事例から検索します（48事例）</p>
             <form id="searchFormExplore" class="search-form">
@@ -71,7 +73,7 @@
         </section>
 
         <!-- 習得型フォーム -->
-        <section class="search-section hidden" id="formTraining">
+        <section class="search-section" id="formTraining">
             <h2>活動を生成・検索 <span class="mode-label training">習得型</span></h2>
             <p class="form-desc">目標から逆算し、スキルを身につける授業活動を提案します</p>
 
