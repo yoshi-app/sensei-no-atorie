@@ -12,10 +12,10 @@ const resultsTitle = document.getElementById('resultsTitle');
 
 // レベル表示名マッピング
 const LEVEL_LABELS = {
-    '初心者': '入門（初めて学ぶ）',
-    '中級': '実践（基礎を理解している）',
-    '管理職': 'リーダー・指導層',
-    'エンジニア': '専門職（高度な知識・技術を持つ）'
+    '入門': '入門（初めて学ぶ）',
+    '基礎': '基礎（概念を理解している）',
+    '応用': '応用（基礎を活用できる）',
+    '発展': '発展（深く探究できる）'
 };
 
 // ページロード時
@@ -173,10 +173,20 @@ async function generateActivity() {
         return;
     }
 
+    const goal = document.getElementById('learningGoal').value.trim();
+    if (!goal) {
+        alert('学習目標を入力してください。');
+        return;
+    }
+
+    const trainingGrade = document.getElementById('trainingGrade').value;
+    const trainingSubject = document.getElementById('trainingSubject').value;
     const level = document.getElementById('level').value;
     const activityType = document.getElementById('activityType').value;
     const duration = document.getElementById('duration').value;
 
+    const gradeLabel = trainingGrade || '指定なし';
+    const subjectLabel = trainingSubject || '指定なし';
     const levelLabel = level ? LEVEL_LABELS[level] : '指定なし';
     const activityLabel = activityType || '指定なし';
     const durationLabel = duration || '指定なし';
@@ -185,30 +195,25 @@ async function generateActivity() {
     resultsTitle.textContent = 'AIが活動を生成中...';
     resultsContainer.innerHTML = '<div class="loading"><div class="spinner"></div><p>Geminiが授業活動を設計しています...</p></div>';
 
-    const prompt = `あなたは教育活動設計の専門家です。以下の条件で授業活動案を1つ設計してください。
+    const prompt = `以下の条件で、10〜30分で完結する対面授業の活動を1つ設計してください。
 
+学年: ${gradeLabel}
+教科・領域: ${subjectLabel}
 授業テーマ・単元: ${theme}
+学習目標: ${goal}
 学習者レベル: ${levelLabel}
 所要時間: ${durationLabel}
-活動タイプ: ${activityLabel}
+活動タイプ: ${activityLabel || '条件に最も適したものを選ぶ'}
 
-活動タイプの定義：
-- ハンズオン: 手を動かして実践する体験型活動
-- ケーススタディ: 事例を読み・分析する活動
-- ロールプレイ: 役割を演じて体験する活動
-- グループワーク: チームで議論・協働する活動
-- 振り返り: 学びを整理・言語化する活動
-- 指定なし: テーマと条件に最も適した活動タイプを選んでください
-
-以下のJSONのみで回答してください（他の文章は不要）：
+以下のJSON形式で回答してください：
 {
-  "活動名": "具体的な活動名（テーマを含む）",
-  "活動タイプ": "ハンズオン or ケーススタディ or ロールプレイ or グループワーク or 振り返り",
-  "概要": "活動の説明（2〜3文）",
-  "手順": ["ステップ1の説明", "ステップ2の説明", "ステップ3の説明", "ステップ4の説明"],
+  "活動名": "テーマを含む具体的な活動名",
+  "活動タイプ": "ハンズオン / ケーススタディ / ロールプレイ / グループワーク / 振り返り",
+  "概要": "学習者が何をして、どのように学習目標を達成するかを2文で記述",
+  "手順": ["ステップ1（〇分）：内容", "ステップ2（〇分）：内容", "ステップ3（〇分）：内容"],
   "準備物": "必要な教材・道具",
-  "ファシリテーションのポイント": "教師・ファシリテーターへの具体的なアドバイス",
-  "評価の方法": "学習成果の確認方法"
+  "ポイント": "ファシリテーターが特に意識すべき1点",
+  "確認方法": "活動後に学習目標の達成を確認する方法"
 }`;
 
     try {
@@ -231,7 +236,7 @@ async function generateActivity() {
         if (!text) throw new Error('レスポンスが空です');
 
         const activity = JSON.parse(text);
-        displayGenerated(activity, theme, levelLabel, durationLabel);
+        displayGenerated(activity, theme, goal, levelLabel, durationLabel);
 
     } catch (err) {
         console.error(err);
@@ -242,7 +247,7 @@ async function generateActivity() {
 
 // ── 生成結果の表示 ───────────────────────────────────────
 
-function displayGenerated(activity, theme, level, duration) {
+function displayGenerated(activity, theme, goal, level, duration) {
     resultsTitle.textContent = `AI生成結果：${theme}`;
 
     const stepsHTML = Array.isArray(activity['手順'])
@@ -267,15 +272,15 @@ function displayGenerated(activity, theme, level, duration) {
                     <p>${activity['準備物']}</p>
                 </div>
                 <div class="gen-section">
-                    <div class="gen-label">ファシリテーションのポイント</div>
-                    <p>${activity['ファシリテーションのポイント']}</p>
+                    <div class="gen-label">ポイント</div>
+                    <p>${activity['ポイント']}</p>
                 </div>
                 <div class="gen-section">
-                    <div class="gen-label">評価の方法</div>
-                    <p>${activity['評価の方法']}</p>
+                    <div class="gen-label">確認方法</div>
+                    <p>${activity['確認方法']}</p>
                 </div>
             </div>
-            <button class="adopt-button" onclick="adoptGenerated(${JSON.stringify(activity).replace(/"/g, '&quot;')}, '${theme}')">
+            <button class="adopt-button" onclick="adoptGenerated(${JSON.stringify(activity).replace(/"/g, '&quot;')}, '${theme}', '${goal.replace(/'/g, "\\'")}')">
                 この活動を採用（コピー）
             </button>
         </div>
@@ -457,13 +462,14 @@ ${c.output}`;
     copyToClipboard(template);
 }
 
-function adoptGenerated(activity, theme) {
+function adoptGenerated(activity, theme, goal) {
     const steps = Array.isArray(activity['手順'])
         ? activity['手順'].map((s, i) => `  ${i + 1}. ${s}`).join('\n')
         : activity['手順'];
 
     const template = `【AI生成：授業活動案】
 授業テーマ: ${theme}
+学習目標: ${goal}
 活動名: ${activity['活動名']}
 活動タイプ: ${activity['活動タイプ']}
 
@@ -476,11 +482,11 @@ ${steps}
 【準備物】
 ${activity['準備物']}
 
-【ファシリテーションのポイント】
-${activity['ファシリテーションのポイント']}
+【ポイント】
+${activity['ポイント']}
 
-【評価の方法】
-${activity['評価の方法']}`;
+【確認方法】
+${activity['確認方法']}`;
 
     copyToClipboard(template);
 }

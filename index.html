@@ -96,14 +96,45 @@
                     <label for="lessonTheme">授業テーマ・単元 <span class="required">*生成に必要</span></label>
                     <input type="text" id="lessonTheme" placeholder="例: 江戸時代の社会と文化、分数の割り算、環境問題" autocomplete="off">
                 </div>
+                <div class="form-group full-width">
+                    <label for="learningGoal">学習目標 <span class="required">*生成に必要</span></label>
+                    <input type="text" id="learningGoal" placeholder="例: 分数の割り算を使って文章題を解けるようになる" autocomplete="off">
+                </div>
+                <div class="form-group">
+                    <label for="trainingGrade">学年</label>
+                    <select id="trainingGrade" name="trainingGrade">
+                        <option value="">指定なし</option>
+                        <option value="小学校低学年">小学校低学年（1〜2年）</option>
+                        <option value="小学校中学年">小学校中学年（3〜4年）</option>
+                        <option value="小学校高学年">小学校高学年（5〜6年）</option>
+                        <option value="中学生">中学生</option>
+                        <option value="高校生">高校生</option>
+                        <option value="大学生・社会人">大学生・社会人</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="trainingSubject">教科・領域</label>
+                    <select id="trainingSubject" name="trainingSubject">
+                        <option value="">指定なし</option>
+                        <option value="国語">国語</option>
+                        <option value="算数・数学">算数・数学</option>
+                        <option value="理科">理科</option>
+                        <option value="社会">社会</option>
+                        <option value="英語・外国語">英語・外国語</option>
+                        <option value="体育・保健">体育・保健</option>
+                        <option value="音楽・芸術">音楽・芸術</option>
+                        <option value="技術・家庭">技術・家庭</option>
+                        <option value="道徳・総合">道徳・総合</option>
+                    </select>
+                </div>
                 <div class="form-group">
                     <label for="level">学習者レベル</label>
                     <select id="level" name="level">
-                        <option value="">すべて</option>
-                        <option value="初心者">入門（初めて学ぶ）</option>
-                        <option value="中級">実践（基礎を理解している）</option>
-                        <option value="管理職">リーダー・指導層</option>
-                        <option value="エンジニア">専門職（高度な知識・技術を持つ）</option>
+                        <option value="">指定なし</option>
+                        <option value="入門">入門（初めて学ぶ）</option>
+                        <option value="基礎">基礎（概念を理解している）</option>
+                        <option value="応用">応用（基礎を活用できる）</option>
+                        <option value="発展">発展（深く探究できる）</option>
                     </select>
                 </div>
                 <div class="form-group">
@@ -120,11 +151,11 @@
                 <div class="form-group">
                     <label for="duration">所要時間</label>
                     <select id="duration" name="duration">
-                        <option value="">すべて</option>
+                        <option value="">指定なし</option>
+                        <option value="10分">10分</option>
                         <option value="15分">15分</option>
+                        <option value="20分">20分</option>
                         <option value="30分">30分</option>
-                        <option value="60分">60分</option>
-                        <option value="半日以上">半日以上</option>
                     </select>
                 </div>
                 <div class="button-group">
