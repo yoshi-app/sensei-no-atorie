@@ -159,6 +159,8 @@ async function generateActivity() {
 
 設計の指針：
 - 手順の各ステップには、学習者が実際に取り組む問題・事例・数値を具体的に記述する（例：「3/4 ÷ 1/2 を計算せよ」のように実際の問題文を示す）
+- 「〇〇しない場合はどうなるか」など対照条件と比較させることで、学習内容の必然性に気づかせる場面を設ける
+- 体験後に学習者が自分の言葉で説明する場面を設ける
 - ポイントはファシリテーターが特に意識すべき1点を簡潔に記述する
 
 以下のJSON形式で回答してください：
@@ -230,6 +232,10 @@ function displayGenerated(activity, theme, goal, level, duration) {
             <button class="adopt-button" onclick="adoptGenerated(${JSON.stringify(activity).replace(/"/g, '&quot;')}, '${theme}', '${goal.replace(/'/g, "\\'")}')">
                 この活動を採用（コピー）
             </button>
+            <div class="generation-tip">
+                <p class="tip-label">より良い活動を生成するには</p>
+                <p>学習目標を「〜を理解する」だけでなく「〜を自分の言葉で説明できる」まで書くと、学習者が体験を言語化する場面が設計されやすくなります。</p>
+            </div>
         </div>
     `;
 }
