@@ -159,9 +159,7 @@ async function generateActivity() {
 
 設計の指針：
 - 手順の各ステップには、学習者が実際に取り組む問題・事例・数値を具体的に記述する（例：「3/4 ÷ 1/2 を計算せよ」のように実際の問題文を示す）
-- 準備物は教師が授業のために特別に用意するものだけを列挙する（筆記用具・ホワイトボード・プロジェクタなど教室常備品は除く）
-- 確認方法は「何が・どの程度できていれば達成とみなすか」の基準を具体的に示す（例：3問中2問以上正解、〇〇の手順を口頭で説明できる等）
-- 模範解答には手順内で示した問題の正解と、学習者が踏むべき思考プロセスを記述する
+- ポイントはファシリテーターが特に意識すべき1点を簡潔に記述する
 
 以下のJSON形式で回答してください：
 {
@@ -169,10 +167,7 @@ async function generateActivity() {
   "活動タイプ": "ハンズオン / ケーススタディ / ロールプレイ / グループワーク / 振り返り",
   "概要": "学習者が何をして、どのように学習目標を達成するかを2文で記述",
   "手順": ["ステップ1（〇分）：具体的な問題・数値を含む内容", "ステップ2（〇分）：内容", "ステップ3（〇分）：内容"],
-  "準備物": "教師が特別に用意するもののみ（なければ「特になし」）",
-  "ポイント": "ファシリテーターが特に意識すべき1点",
-  "確認方法": "何が・どの程度できていれば達成とみなすかの基準",
-  "模範解答": "手順内の問題の正解と、学習者が踏むべき思考プロセス"
+  "ポイント": "ファシリテーターが特に意識すべき1点"
 }`;
 
     try {
@@ -228,22 +223,9 @@ function displayGenerated(activity, theme, goal, level, duration) {
                     ${stepsHTML}
                 </div>
                 <div class="gen-section">
-                    <div class="gen-label">準備物</div>
-                    <p>${activity['準備物']}</p>
-                </div>
-                <div class="gen-section">
                     <div class="gen-label">ポイント</div>
                     <p>${activity['ポイント']}</p>
                 </div>
-                <div class="gen-section">
-                    <div class="gen-label">確認方法</div>
-                    <p>${activity['確認方法']}</p>
-                </div>
-                ${activity['模範解答'] ? `
-                <div class="gen-section">
-                    <div class="gen-label">模範解答・思考プロセス</div>
-                    <p>${activity['模範解答']}</p>
-                </div>` : ''}
             </div>
             <button class="adopt-button" onclick="adoptGenerated(${JSON.stringify(activity).replace(/"/g, '&quot;')}, '${theme}', '${goal.replace(/'/g, "\\'")}')">
                 この活動を採用（コピー）
@@ -444,17 +426,8 @@ ${activity['概要']}
 【手順】
 ${steps}
 
-【準備物】
-${activity['準備物']}
-
 【ポイント】
-${activity['ポイント']}
-
-【確認方法】
-${activity['確認方法']}${activity['模範解答'] ? `
-
-【模範解答・思考プロセス】
-${activity['模範解答']}` : ''}`;
+${activity['ポイント']}`;
 
     copyToClipboard(template);
 }
