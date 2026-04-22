@@ -275,8 +275,8 @@ body {
 .generate-note {
   text-align: center;
   font-size: 0.8rem;
-  color: var(--gray-400);
-  margin-top: 6px;
+  color: var(--gray-300);
+  margin-top: 0;
 }
 
 /* ========== RESULTS SECTION ========== */
@@ -615,7 +615,8 @@ body {
 .button-group {
   grid-column: 1 / -1;
   display: flex;
-  gap: 12px;
+  flex-direction: column;
+  gap: 6px;
 }
 
 /* ========== LOADING ========== */
