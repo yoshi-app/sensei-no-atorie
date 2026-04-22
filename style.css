@@ -253,7 +253,7 @@ body {
 }
 
 .generate-button {
-  flex: 1;
+  width: 100%;
   padding: 11px 24px;
   background: var(--orange);
   color: var(--white);
