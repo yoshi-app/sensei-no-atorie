@@ -272,6 +272,13 @@ body {
   box-shadow: 0 4px 16px rgba(230,126,34,0.3);
 }
 
+.generate-note {
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--gray-400);
+  margin-top: 6px;
+}
+
 /* ========== RESULTS SECTION ========== */
 .results-section {
   margin-bottom: 40px;
